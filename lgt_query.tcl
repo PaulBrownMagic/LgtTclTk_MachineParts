@@ -26,7 +26,9 @@ proc disconnect {} {
 	flush $lgt::logtalk
 	# catch to ignore unflushed output
 	catch {close $lgt::logtalk}
-	set $lgt::logtalk 0
+	set lgt::logtalk 0
+	# Log disconnected
+	puts "Logtalk disconnected"
 }
 
 proc query {query} {
