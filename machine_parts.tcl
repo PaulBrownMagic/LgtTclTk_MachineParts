@@ -20,13 +20,13 @@ grid [ttk::label .c.press_lbl -text "Press" -font TkHeadingFont] -column 3 -row 
 grid [ttk::label .c.unit_profit_lbl -text "Unit Profit" -font TkHeadingFont] -column 4 -row 1 -sticky ws
 
 # Info
-grid [ttk::label .c.unit_a_lbl -text "Unit A" -font TkHeadingFont] -column 0 -row 2
+grid [ttk::label .c.unit_a_lbl -text "Unit A"] -column 0 -row 2
 grid [ttk::label .c.unit_a_lathe_lbl -text "0.1" -anchor e] -column 1 -row 2
 grid [ttk::label .c.unit_a_polisher_lbl -text "0.2" -anchor e] -column 2 -row 2
 grid [ttk::label .c.unit_a_press_lbl -text "0.4" -anchor e] -column 3 -row 2
 grid [ttk::label .c.unit_a_unit_profit_lbl -text "\$16" -anchor e] -column 4 -row 2
 
-grid [ttk::label .c.unit_b_lbl -text "Unit B" -font TkHeadingFont] -column 0 -row 3
+grid [ttk::label .c.unit_b_lbl -text "Unit B"] -column 0 -row 3
 grid [ttk::label .c.unit_b_lathe_lbl -text "0.2" -anchor e] -column 1 -row 3
 grid [ttk::label .c.unit_b_polisher_lbl -text "0.1" -anchor e] -column 2 -row 3
 grid [ttk::label .c.unit_b_press_lbl -text "0.1" -anchor e] -column 3 -row 3

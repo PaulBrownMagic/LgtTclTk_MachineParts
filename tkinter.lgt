@@ -66,7 +66,7 @@
 	% In one pass filter any non-ground values, convert from `=` pairs to `-`
 	% pairs, and accumulate the pairs keys
 	ground_pairs_keys(Pairs, Ground, Keys) :-
-		ground_pairs_keys(Pairs, H-H, Ground, I-I, Keys), !.
+		ground_pairs_keys(Pairs, H-H, Ground, I-I, Keys).
 
 	ground_pairs_keys([], Ground-[], Ground, Keys-[], Keys).
 	ground_pairs_keys([K=V|Pairs], GAcc-GH, Ground, KAcc-KH, Keys) :-
