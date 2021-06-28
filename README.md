@@ -5,15 +5,17 @@ querying Logtalk.
 
 Currently supports the following backends:
 
-- swilgt
 - eclipselgt
 - gplgt
+- sicstuslgt
+- swilgt
+- yaplgt
 
 Backends known to not be supported:
 
-- BProlog (doesn't support `variable_names/1` option to `write_term/2`, which
+- B-Prolog (doesn't support `variable_names/1` option to `write_term/2`, which
   is needed for `tkinter`)
-- CXProlog (no CLPFD)
+- CxProlog (no CLP(FD) library)
 
 ## Dependencies
 
@@ -34,9 +36,9 @@ For your convenience there's a bash run script provided:
 :~$ ./run
 ```
 
-Note, the application assumes the logtalk backend has been selected,
-i.e. the Tcl will call `logtalk` and expect that to be one of `swilgt`,
-`eclipselgt` or `gplgt`, which you can set with `logtalk_backend_select`.
+Note, the application assumes that one of the supported Logtalk backends
+listed above has been selected, i.e. the Tcl will call `logtalk` and expect
+that to be one set using the `logtalk_backend_select` script.
 
 If you wish to change this behaviour, the variable `load_cmd` in
 `lgt_query.lgt` is the thing you need to change.
