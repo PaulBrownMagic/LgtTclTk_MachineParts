@@ -25,6 +25,7 @@
 
 :- initialization((
 	logtalk_load([
+		term_io(loader),
 		json(loader),
 		dictionaries(loader),
 		nested_dictionaries(loader)
@@ -32,7 +33,7 @@
 	logtalk_load([
 		solver,
 		tkinter
-	],
-	[ optimize(on)
+	], [
+		optimize(on)
 	])
 )).
